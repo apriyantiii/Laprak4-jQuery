@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Efek Gambar jquery</title>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript">
+        //Inisialisasi awal jquery
+        $(document).ready(function () {
+            //sembunyiin elemen class gambar
+            $('.megawati').hide();
+            //tampilkan elemen class tampil dgn di click sehingga gambar muncul
+            $('.show').click(function () {
+                $('.megawati').show();
+            });
+            //ketika elemen sembunyi di klik maka gambar akan sembunyi
+            $('.hide').click(function () {
+                //sembunyikan gambar
+                $('.megawati').hide();
+            });
+        });
+        $(document).ready(function () {
+            //sembunyiin elemen class gambar
+            $('.puan').hide();
+            //tampilkan elemen class tampil dgn di click sehingga gambar muncul
+            $('.tampil').click(function () {
+                $('.puan').show();
+            });
+            //ketika elemen sembunyi di klik maka gambar akan sembunyi
+            $('.sembunyi').click(function () {
+                //sembunyikan gambar
+                $('.puan').hide();
+            });
+        });
+    </script>
+
+</head>
+
+<body>
+    <div class="btn">
+        <input type="button" class="show" value="Tampil">
+        <input type="button" class="hide" value="Sembunyi">
+    </div>
+    <div class="megawati">
+        <img src="megawati.jpg" width="500px">
+    </div>
+    <div class="btn">
+        <input type="button" class="tampil" value="Tampil">
+        <input type="button" class="sembunyi" value="Sembunyi">
+    </div>
+    <div class="puan">
+        <img src="puan.jpg" width="500px">
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Double Click</title>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript">
+        // menuliskan function yang akan dijalankan
+        $(document).ready(function () {
+            // melakukan perintah untuk dua kali klik pada div
+            $(".kotak").dblclick(function () {
+                // mengubah div agar mempunyai warna background merah setelah di klik dua kali
+                $(this).css({ background: "yellow" });
+            });
+        });
+    </script>
+    <style type="text/css">
+        .kotak {
+            background: rgb(71, 35, 28);
+            float: left;
+            width: 100px;
+            height: 100px;
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <h2> Klik 2x pada setiap kotak untuk merubah warna kotak </h2>
+    <!-- memanggil div -->
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+</body>
+
+</html>

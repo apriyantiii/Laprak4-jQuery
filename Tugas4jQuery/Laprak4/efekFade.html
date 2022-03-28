@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Efek Fade</title>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript">
+        // menuliskan function yang akan dijalankan
+        $(document).ready(function () {
+            $("#tombol_fade_out").click(function () {
+                $("#box").fadeOut("slow");
+            })
+
+            $("#tombol_fade_in").click(function () {
+                $("#box").fadeIn("fast");
+            })
+
+            $("#tombol_fade_to").click(function () {
+                $("#box").fadeTo("slow", 0.3);
+            })
+        });
+    </script>
+    <style type="text/css">
+        #box {
+            height: 100px;
+            width: 150px;
+            background-color: red;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="box"></div>
+    <br><br>
+    <button id="tombol_fade_out">FadeOut</button>
+    <button id="tombol_fade_in">FadeIn</button>
+    <button id="tombol_fade_to">FadeTo 0.3</button>
+</body>
+
+</html>
